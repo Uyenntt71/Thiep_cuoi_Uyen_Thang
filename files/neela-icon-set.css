@@ -2,14 +2,15 @@
 
 @font-face {
   font-family: "neela-icon-set";
-  src:url("../webfonts/neela-icon-set.eot");
-  src:url("../webfonts/neela-icon-setd41d.eot?#iefix") format("embedded-opentype"),
-    url("../webfonts/neela-icon-set.woff") format("woff"),
+  src: url("../webfonts/neela-icon-set.eot");
+  src: url("../webfonts/neela-icon-setd41d.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://nhuhuy-tuyetmai.iwedding.info/templates/template19/webfonts/neela-icon-set.woff")
+      format("woff"),
     url("../webfonts/neela-icon-set.ttf") format("truetype"),
     url("../webfonts/neela-icon-set.svg#neela-icon-set") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {

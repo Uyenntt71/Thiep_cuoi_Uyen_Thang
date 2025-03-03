@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: Gotham;
-  src: url("/font/wedd/iCielGotham-Bold.woff") format("woff"), url("/font/wedd/iCielGotham-Bold.woff2") format("woff2");
+  src: url("../files/webfonts/iCielGotham-Bold.woff") format("woff"),
+    url("../files/webfonts/iCielGotham-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
@@ -9,41 +10,48 @@
   font-family: Gotham;
   font-weight: 300;
   font-style: normal;
-  src: url("/font/wedd/iCielGotham-Light.woff2") format("woff2"), url("/font/wedd/iCielGotham-Light.woff") format("woff");
+  src: url("../files/webfonts/iCielGotham-Light.woff2") format("woff2"),
+    url("../files/webfonts/iCielGotham-Light.woff") format("woff");
 }
 @font-face {
   font-family: Gotham;
   font-weight: 500;
   font-style: normal;
-  src: url("/font/wedd/iCielGotham-Medium.woff2") format("woff2"), url("/font/wedd/iCielGotham-Medium.woff") format("woff");
+  src: url("../files/webfonts/iCielGotham-Medium.woff2") format("woff2"),
+    url("../files/webfonts/iCielGotham-Medium.woff") format("woff");
 }
 @font-face {
   font-family: Gotham;
-  src: url("/font/wedd/iCielGotham-Ultra.woff2") format("woff2"), url("/font/wedd/iCielGotham-Ultra.woff") format("woff");
+  src: url("../files/webfonts/iCielGotham-Ultra.woff2") format("woff2"),
+    url("../files/webfonts/iCielGotham-Ultra.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url("/font/wedd/SVN-GothamRounded.woff2") format("woff2"), url("/font/wedd/SVN-GothamRounded.woff") format("woff");
+  src: url("../files/webfonts/SVN-GothamRounded.woff2") format("woff2"),
+    url("../files/webfonts/SVN-GothamRounded.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Gurmukhi;
-  src: url("/font/wedd/NVNGurmukhiMN-Bold.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-Bold.woff") format("woff");
+  src: url("../files/webfonts/NVNGurmukhiMN-Bold.woff2") format("woff2"),
+    url("../files/webfonts/NVNGurmukhiMN-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  src: url("/font/wedd/NVNGurmukhiMN-Regular.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-Regular.woff") format("woff");
+  src: url("../files/webfonts/NVNGurmukhiMN-Regular.woff2") format("woff2"),
+    url("../files/webfonts/NVNGurmukhiMN-Regular.woff") format("woff");
   font-family: Gurmukhi;
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Gurmukhi;
-  src: url("/font/wedd/NVNGurmukhiMN-BoldItalic.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-BoldItalic.woff") format("woff");
+  src: url("../files/webfonts/NVNGurmukhiMN-BoldItalic.woff2") format("woff2"),
+    url("../files/webfonts/NVNGurmukhiMN-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -51,30 +59,33 @@
   font-family: Gurmukhi;
   font-style: italic;
   font-weight: normal;
-  src: url("/font/wedd/NVNGurmukhiMN-Italic.woff2") format("woff2"), url("/font/wedd/NVNGurmukhiMN-Italic.woff") format("woff");
+  src: url("../files/webfonts/NVNGurmukhiMN-Italic.woff2") format("woff2"),
+    url("../files/webfonts/NVNGurmukhiMN-Italic.woff") format("woff");
 }
 @font-face {
   font-family: Arimo;
   font-style: italic;
   font-weight: normal;
-  src: url("/font/wedd/ARIMO-ITALIC-VARIABLEFONT_WGHT.TTF") format("truetype");
+  src: url("../files/webfonts/ARIMO-ITALIC-VARIABLEFONT_WGHT.TTF")
+    format("truetype");
 }
 @font-face {
   font-family: Arimo;
   font-style: normal;
   font-weight: normal;
-  src: url("/font/wedd/Arimo-Regular.woff2") format("woff2"), url("/font/wedd/Arimo-Regular.woff") format("woff");
+  src: url("../files/webfonts/Arimo-Regular.woff2") format("woff2"),
+    url("../files/webfonts/Arimo-Regular.woff") format("woff");
 }
 * body {
   font-family: Gotham;
   font-weight: normal;
 }
 
-[class^=pure-u] > .inner {
+[class^="pure-u"] > .inner {
   padding: 0 15px;
 }
 @media (max-width: 768px) {
-  [class^=pure-u] > .inner {
+  [class^="pure-u"] > .inner {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
@@ -177,7 +188,7 @@
 
 .title-1 {
   font-size: 30px;
-  color: #4B4B4B;
+  color: #4b4b4b;
   font-style: italic;
   font-family: Gurmukhi;
   font-weight: 300;
@@ -304,22 +315,22 @@ input::-ms-input-placeholder {
   font-style: normal;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator,
-input[type=time]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
   /* Làm biểu tượng trong suốt */
   /* Không cho phép tương tác trực tiếp với biểu tượng */
 }
 
 /* Firefox */
-input[type=date]::-moz-focus-inner,
-input[type=time]::-moz-focus-inner {
+input[type="date"]::-moz-focus-inner,
+input[type="time"]::-moz-focus-inner {
   border: 0;
   opacity: 0;
   /* Làm biểu tượng trong suốt */
 }
 
-input[type=date],
-input[type=time] {
+input[type="date"],
+input[type="time"] {
   position: relative;
 }
 
@@ -457,7 +468,7 @@ div.child.section-upload {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   text-align: center;
-  color: #FF8A8A;
+  color: #ff8a8a;
 }
 
 .success-popup.show {
@@ -752,7 +763,7 @@ input:focus {
 
 .dz-error-mark {
   border-radius: 50%;
-  background: #FF8A8A;
+  background: #ff8a8a;
 }
 
 .dz-success-mark {
@@ -795,7 +806,7 @@ span#story_date_title_3 {
 .swal-button--confirm {
   border: none; /* Bỏ border */
   outline: none; /* Bỏ outline nếu có */
-  background-color: #4CAF50; /* Tùy chỉnh màu nền nếu cần */
+  background-color: #4caf50; /* Tùy chỉnh màu nền nếu cần */
   color: white; /* Tùy chỉnh màu chữ nếu cần */
   padding: 10px 20px; /* Tùy chỉnh padding nếu cần */
   border-radius: 5px; /* Tùy chỉnh bo góc nếu cần */
@@ -1046,7 +1057,8 @@ a.eapps-countdown-timer-inner {
   display: none;
 }
 
-.eapps-countdown-timer-finish-message .eapps-countdown-timer-header-finish-message {
+.eapps-countdown-timer-finish-message
+  .eapps-countdown-timer-header-finish-message {
   display: block;
 }
 
@@ -1058,11 +1070,13 @@ a.eapps-countdown-timer-inner {
   display: none;
 }
 
-.eapps-countdown-timer-finish-message.eapps-countdown-timer-finish-button-show .eapps-countdown-timer-button-stop {
+.eapps-countdown-timer-finish-message.eapps-countdown-timer-finish-button-show
+  .eapps-countdown-timer-button-stop {
   display: block;
 }
 
-.eapps-countdown-timer-finish-message.eapps-countdown-timer-finish-button-hide .eapps-countdown-timer-button-stop {
+.eapps-countdown-timer-finish-message.eapps-countdown-timer-finish-button-hide
+  .eapps-countdown-timer-button-stop {
   display: block;
 }
 
@@ -1095,7 +1109,8 @@ a.eapps-countdown-timer-inner {
   outline: 0;
 }
 
-.eapps-countdown-timer-480.eapps-countdown-timer-position-bar .eapps-countdown-timer-inner {
+.eapps-countdown-timer-480.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-inner {
   flex-direction: column;
 }
 
@@ -1103,7 +1118,8 @@ a.eapps-countdown-timer-inner {
   text-align: left;
 }
 
-.eapps-countdown-timer-480.eapps-countdown-timer-position-bar .eapps-countdown-timer-header {
+.eapps-countdown-timer-480.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-header {
   margin-bottom: 4px;
 }
 
@@ -1114,7 +1130,8 @@ a.eapps-countdown-timer-inner {
   align-items: center;
 }
 
-.eapps-countdown-timer-640.eapps-countdown-timer-position-bar .eapps-countdown-timer-header-title {
+.eapps-countdown-timer-640.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-header-title {
   text-align: left;
   font-size: 14px;
   line-height: 20px;
@@ -1130,7 +1147,8 @@ a.eapps-countdown-timer-inner {
   max-height: 2.9em;
 }
 
-.eapps-countdown-timer-480.eapps-countdown-timer-position-bar .eapps-countdown-timer-header-title-text {
+.eapps-countdown-timer-480.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-header-title-text {
   text-align: center;
 }
 
@@ -1138,7 +1156,8 @@ a.eapps-countdown-timer-inner {
   margin: 4px 20px 0 20px;
 }
 
-.eapps-countdown-timer-480.eapps-countdown-timer-position-bar .eapps-countdown-timer-item {
+.eapps-countdown-timer-480.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-item {
   flex-direction: row;
   margin: 0;
 }
@@ -1151,11 +1170,13 @@ a.eapps-countdown-timer-inner {
   margin: 0 6px !important;
 }
 
-.eapps-countdown-timer-640.eapps-countdown-timer-position-bar .eapps-countdown-timer-item-group {
+.eapps-countdown-timer-640.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-item-group {
   margin-right: 4px !important;
 }
 
-.eapps-countdown-timer-480.eapps-countdown-timer-position-bar .eapps-countdown-timer-item-group {
+.eapps-countdown-timer-480.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-item-group {
   margin: 0 2px !important;
 }
 
@@ -1164,7 +1185,8 @@ a.eapps-countdown-timer-inner {
   margin-top: 2px;
 }
 
-.eapps-countdown-timer-640.eapps-countdown-timer-position-bar .eapps-countdown-timer-item-group-label {
+.eapps-countdown-timer-640.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-item-group-label {
   font-size: 9px !important;
 }
 
@@ -1173,7 +1195,8 @@ a.eapps-countdown-timer-inner {
   line-height: 20px !important;
 }
 
-.eapps-countdown-timer-480.eapps-countdown-timer-position-bar .eapps-countdown-timer-item-value {
+.eapps-countdown-timer-480.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-item-value {
   font-size: 13px !important;
   line-height: 16px !important;
 }
@@ -1190,7 +1213,8 @@ a.eapps-countdown-timer-inner {
   margin-top: 0 !important;
 }
 
-.eapps-countdown-timer-640.eapps-countdown-timer-position-bar .eapps-countdown-timer-button-container {
+.eapps-countdown-timer-640.eapps-countdown-timer-position-bar
+  .eapps-countdown-timer-button-container {
   display: none;
   margin-left: none;
 }
@@ -1290,7 +1314,9 @@ a.eapps-countdown-timer-inner {
   direction: ltr !important;
 }
 
-.eapps-countdown-timer-style-blocks .eapps-countdown-timer-item-group-inner > div {
+.eapps-countdown-timer-style-blocks
+  .eapps-countdown-timer-item-group-inner
+  > div {
   margin: 0 2px;
 }
 
@@ -1319,7 +1345,11 @@ a.eapps-countdown-timer-inner {
   top: 50%;
   position: absolute;
   height: 50%;
-  background: linear-gradient(to top, rgba(39, 39, 39, 0) 0%, rgba(0, 0, 255, 0.3) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(39, 39, 39, 0) 0%,
+    rgba(0, 0, 255, 0.3) 100%
+  );
   z-index: 3;
   width: 100%;
   left: 0;
@@ -1331,7 +1361,11 @@ a.eapps-countdown-timer-inner {
   top: 0;
   position: absolute;
   height: 50%;
-  background: linear-gradient(to top, rgba(39, 39, 39, 0) 0%, rgba(0, 0, 255, 0.3) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(39, 39, 39, 0) 0%,
+    rgba(0, 0, 255, 0.3) 100%
+  );
   z-index: 3;
   width: 100%;
   left: 0;
@@ -1350,13 +1384,17 @@ a.eapps-countdown-timer-inner {
   z-index: 3;
 }
 
-.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-outline .eapps-countdown-timer-item-group-inner,
-.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-combined .eapps-countdown-timer-item-group-inner {
+.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-outline
+  .eapps-countdown-timer-item-group-inner,
+.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-combined
+  .eapps-countdown-timer-item-group-inner {
   position: relative;
 }
 
-.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-outline .eapps-countdown-timer-item-group-inner:before,
-.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-combined .eapps-countdown-timer-item-group-inner:before {
+.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-outline
+  .eapps-countdown-timer-item-group-inner:before,
+.eapps-countdown-timer-style-dashed.eapps-countdown-timer-style-combined
+  .eapps-countdown-timer-item-group-inner:before {
   content: "";
   display: block;
   position: absolute;
@@ -1377,17 +1415,21 @@ a.eapps-countdown-timer-inner {
   border: 1px solid currentColor;
 }
 
-.eapps-countdown-timer-style-outline .eapps-countdown-timer-item-counter-item .eapps-countdown-timer-item-value {
+.eapps-countdown-timer-style-outline
+  .eapps-countdown-timer-item-counter-item
+  .eapps-countdown-timer-item-value {
   padding: 6px 14px;
   border-radius: 6px;
   border: 1px solid currentColor;
 }
 
-.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-blocks .eapps-countdown-timer-item-group-inner {
+.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-blocks
+  .eapps-countdown-timer-item-group-inner {
   padding: 0;
 }
 
-.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-dashed .eapps-countdown-timer-item-value:before {
+.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-dashed
+  .eapps-countdown-timer-item-value:before {
   display: none;
 }
 
@@ -1399,12 +1441,16 @@ a.eapps-countdown-timer-inner {
   overflow: hidden;
 }
 
-.eapps-countdown-timer-animation-slide .eapps-countdown-timer-item-value-animate .eapps-countdown-timer-item-value-base {
+.eapps-countdown-timer-animation-slide
+  .eapps-countdown-timer-item-value-animate
+  .eapps-countdown-timer-item-value-base {
   top: -80px;
   transition: all 0s ease;
 }
 
-.eapps-countdown-timer-animation-slide .eapps-countdown-timer-item-value-animate .eapps-countdown-timer-item-value-base-copy {
+.eapps-countdown-timer-animation-slide
+  .eapps-countdown-timer-item-value-animate
+  .eapps-countdown-timer-item-value-base-copy {
   top: 50%;
   transition: all 0s ease;
 }
@@ -1417,7 +1463,8 @@ a.eapps-countdown-timer-inner {
   transform: translate3d(0, 0, 0);
 }
 
-.eapps-countdown-timer-animation-slide .eapps-countdown-timer-item-value-base-copy {
+.eapps-countdown-timer-animation-slide
+  .eapps-countdown-timer-item-value-base-copy {
   transition: all 0.3s ease;
   position: absolute;
   top: 200%;
@@ -1429,11 +1476,15 @@ a.eapps-countdown-timer-inner {
   overflow: hidden;
 }
 
-.eapps-countdown-timer-animation-fade .eapps-countdown-timer-item-value-animate .eapps-countdown-timer-item-value-base {
+.eapps-countdown-timer-animation-fade
+  .eapps-countdown-timer-item-value-animate
+  .eapps-countdown-timer-item-value-base {
   opacity: 0;
 }
 
-.eapps-countdown-timer-animation-fade .eapps-countdown-timer-item-value-animate .eapps-countdown-timer-item-value-base-copy {
+.eapps-countdown-timer-animation-fade
+  .eapps-countdown-timer-item-value-animate
+  .eapps-countdown-timer-item-value-base-copy {
   opacity: 1;
 }
 
@@ -1445,7 +1496,8 @@ a.eapps-countdown-timer-inner {
   transform: translate3d(0, 0, 0);
 }
 
-.eapps-countdown-timer-animation-fade .eapps-countdown-timer-item-value-base-copy {
+.eapps-countdown-timer-animation-fade
+  .eapps-countdown-timer-item-value-base-copy {
   transition: all 0.1s ease-in;
   position: absolute;
   margin-top: 6px;
@@ -1470,32 +1522,39 @@ a.eapps-countdown-timer-inner {
   transform: translate3d(0, 0, 0);
 }
 
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap:before {
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap:before {
   content: attr(data-content);
   position: absolute;
   left: 50%;
 }
 
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-front:before,
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-under:before {
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-front:before,
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-under:before {
   top: 100%;
   transform: translate(-50%, -50%);
 }
 
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-back {
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-back {
   transform: rotateY(180deg) translate3d(0, 0, 0);
 }
 
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-back:before {
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-back:before {
   top: 100%;
   transform: translate(-50%, -50%) rotateZ(180deg);
 }
 
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-over {
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-over {
   z-index: 2;
 }
 
-.eapps-countdown-timer-animation-flip .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-under {
+.eapps-countdown-timer-animation-flip
+  .eapps-countdown-timer-item-value-flap.eapps-countdown-timer-item-value-flap-under {
   z-index: 1;
 }
 
@@ -1524,12 +1583,16 @@ a.eapps-countdown-timer-inner {
   color: #000;
 }
 
-#eapps-countdown-timer-1.eapps-countdown-timer-style-blocks .eapps-countdown-timer-item-value {
+#eapps-countdown-timer-1.eapps-countdown-timer-style-blocks
+  .eapps-countdown-timer-item-value {
   background-color: #000;
 }
 
-#eapps-countdown-timer-1.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-blocks .eapps-countdown-timer-item-value,
-#eapps-countdown-timer-1.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-blocks .eapps-countdown-timer-item-value .eapps-countdown-timer-item-value-base {
+#eapps-countdown-timer-1.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-blocks
+  .eapps-countdown-timer-item-value,
+#eapps-countdown-timer-1.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-blocks
+  .eapps-countdown-timer-item-value
+  .eapps-countdown-timer-item-value-base {
   background-color: transparent;
   color: #000;
 }
@@ -1546,20 +1609,29 @@ a.eapps-countdown-timer-inner {
   animation: eapps-countdown-timer-1-fade-under 500ms ease-out both;
 }
 
-#eapps-countdown-timer-1.eapps-countdown-timer-style-blocks .eapps-countdown-timer-item-value {
+#eapps-countdown-timer-1.eapps-countdown-timer-style-blocks
+  .eapps-countdown-timer-item-value {
   color: #000;
 }
 
-#eapps-countdown-timer-1.eapps-countdown-timer-style-gradient .eapps-countdown-timer-item-value:before,
-#eapps-countdown-timer-1.eapps-countdown-timer-style-gradient .eapps-countdown-timer-item-value:after {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+#eapps-countdown-timer-1.eapps-countdown-timer-style-gradient
+  .eapps-countdown-timer-item-value:before,
+#eapps-countdown-timer-1.eapps-countdown-timer-style-gradient
+  .eapps-countdown-timer-item-value:after {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
 }
 
-#eapps-countdown-timer-1.eapps-countdown-timer-style-outline .eapps-countdown-timer-item-group-inner {
+#eapps-countdown-timer-1.eapps-countdown-timer-style-outline
+  .eapps-countdown-timer-item-group-inner {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-#eapps-countdown-timer-1.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-dashed .eapps-countdown-timer-item-group-inner:before {
+#eapps-countdown-timer-1.eapps-countdown-timer-style-outline.eapps-countdown-timer-style-dashed
+  .eapps-countdown-timer-item-group-inner:before {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1585,7 +1657,7 @@ a.eapps-countdown-timer-inner {
 }
 
 #eapps-countdown-timer-1.eapps-countdown-timer {
-  background-color: #FFDBD5;
+  background-color: #ffdbd5;
 }
 
 #eapps-countdown-timer-1 .eapps-countdown-timer-button {
@@ -1788,7 +1860,7 @@ nav ul a.active {
   /* transition: 0.5s; */
   transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
   transform: translateX(-500px);
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 99;
   top: 0;
   left: 0;
@@ -2034,7 +2106,7 @@ section#love-storey .content {
   margin: 13px auto 20px;
   text-align: justify;
   -moz-text-align-last: center;
-       text-align-last: center;
+  text-align-last: center;
 }
 
 section#wedding-calendar {
@@ -2220,7 +2292,7 @@ section#congratulations .btn-blessing svg path {
   stroke: unset;
 }
 section#congratulations .congratulation-list {
-  border: 1px solid #C7C7CC;
+  border: 1px solid #c7c7cc;
   border-radius: 10px;
   height: auto;
   overflow: auto;
@@ -2390,7 +2462,7 @@ section#gift-box .box .groom {
   box-sizing: border-box;
   border-radius: 10px;
   margin-right: 10px;
-  border: 1px solid #C7C7CC;
+  border: 1px solid #c7c7cc;
   width: 50%;
   overflow: hidden;
 }
@@ -2398,7 +2470,7 @@ section#gift-box .box .bride {
   box-sizing: border-box;
   border-radius: 10px;
   margin-left: 10px;
-  border: 1px solid #C7C7CC;
+  border: 1px solid #c7c7cc;
   width: 50%;
   overflow: hidden;
 }
@@ -2461,7 +2533,7 @@ section#login .btn.btn-submit button {
   cursor: pointer;
   margin-top: 51px;
   width: 182px;
-  background: #FFCECE;
+  background: #ffcece;
 }
 section#login .btn.btn-submit button:hover {
   background: var(--main-color);
@@ -2533,7 +2605,7 @@ section#register .btn-style3 {
 section#register .btn.btn-submit button {
   cursor: pointer;
   width: 182px;
-  background: #FFCECE;
+  background: #ffcece;
 }
 section#register .btn.btn-submit button:hover {
   background: var(--main-color);
@@ -2635,7 +2707,10 @@ section#register .error-wrap {
   /* Loại bỏ padding */
   cursor: pointer;
 }
-#popup-forgot-pasword .popup-forgot-pasword-content .close-forgot-pasword-btn svg {
+#popup-forgot-pasword
+  .popup-forgot-pasword-content
+  .close-forgot-pasword-btn
+  svg {
   width: 35px;
   height: 35px;
 }
@@ -2693,7 +2768,11 @@ section#register .error-wrap {
   border-radius: 50%;
   margin-right: 10px;
 }
-#popup-forgot-pasword .popup-forgot-pasword-content .user-info .user-details h4 {
+#popup-forgot-pasword
+  .popup-forgot-pasword-content
+  .user-info
+  .user-details
+  h4 {
   margin: 0px;
   padding-top: 0px;
   padding-bottom: 5px;
@@ -2701,10 +2780,17 @@ section#register .error-wrap {
   color: #000;
   font-weight: 600;
 }
-#popup-forgot-pasword .popup-forgot-pasword-content .user-info .user-details svg {
+#popup-forgot-pasword
+  .popup-forgot-pasword-content
+  .user-info
+  .user-details
+  svg {
   padding-left: 5px;
 }
-#popup-forgot-pasword .popup-forgot-pasword-content .user-info .manage-invitation {
+#popup-forgot-pasword
+  .popup-forgot-pasword-content
+  .user-info
+  .manage-invitation {
   display: inline-block;
   background-color: var(--main-color);
   /* màu hồng nhạt */
@@ -2721,7 +2807,11 @@ section#register .error-wrap {
   align-items: center;
   display: flex;
 }
-#popup-forgot-pasword .popup-forgot-pasword-content .user-info .manage-invitation .arrow {
+#popup-forgot-pasword
+  .popup-forgot-pasword-content
+  .user-info
+  .manage-invitation
+  .arrow {
   margin-left: 5px;
 }
 
@@ -2737,9 +2827,9 @@ section#hard .banner-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-clip-path: url(#svgClipPath);
-          clip-path: url(#svgClipPath);
+  clip-path: url(#svgClipPath);
   /* Áp dụng hình dạng từ SVG */
 }
 section#hard .svg-shape {
@@ -2839,13 +2929,13 @@ section#hard .location {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 section#hard .address {
   font-family: Arimo;
   font-style: normal;
   font-weight: normal;
-  color: #4B4B4B;
+  color: #4b4b4b;
   font-family: Gotham;
   font-weight: normal;
   font-style: normal;
@@ -2857,9 +2947,9 @@ section#hard .hard-content {
 section#hard .hard-content p {
   text-align: justify;
   -moz-text-align-last: center;
-       text-align-last: center;
+  text-align-last: center;
   font-size: 15px;
-  color: #4B4B4B;
+  color: #4b4b4b;
   font-family: Arimo;
   font-style: normal;
   font-weight: normal;
@@ -3044,7 +3134,7 @@ section#welcome .image-wrapper #banner {
 section#hero::before,
 #story .bg-color-overlay::before,
 #invitation.bg-color-overlay::before {
-  background-color: #FFDBD5 !important;
+  background-color: #ffdbd5 !important;
 }
 
 .hero-wrapper::before,
@@ -3070,7 +3160,7 @@ section#hero::before,
   margin: 30px 15px;
   text-align: justify;
   -moz-text-align-last: center;
-       text-align-last: center;
+  text-align-last: center;
 }
 .home .above-home h1 {
   text-align: center;
@@ -3182,7 +3272,7 @@ section#hero::before,
   width: 71px;
   height: 67px;
   border-radius: 5px;
-  background: #FFCECE;
+  background: #ffcece;
   margin-right: 20px;
 }
 .home .bottom-home .content .visual-region svg {
@@ -3217,7 +3307,7 @@ section#hero::before,
   width: 100%;
   height: 100% !important;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .home .sharing-region .more-btn {
   display: inline-block;
@@ -3336,7 +3426,8 @@ h4 {
   left: 0;
   border-radius: 2em;
   background: #fbfbfb;
-  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    padding 0.3s ease, margin 0.3s ease;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -3466,7 +3557,7 @@ h4 {
   text-align: center;
   font-size: 12px;
   align-content: center;
-  background: #FFCECE;
+  background: #ffcece;
   cursor: pointer;
   border: none;
 }
