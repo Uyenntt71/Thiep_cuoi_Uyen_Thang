@@ -2646,7 +2646,7 @@
           d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
         </path>
       </svg>
-      <div class="preloader-title upper">A<br><small>&amp;</small><br>N
+      <div class="preloader-title upper">T<br><small>&amp;</small><br>U
       </div>
     </div>
   </div>
@@ -2893,8 +2893,7 @@
                   <div data-animation-direction="fade" data-animation-delay="1000" class="animate-fade animation-fade">
                     <a href="https://thiepcuoionline.huythanhjewelry.vn/anh-nhan-11032025-1601/moi-cuoi#rsvp"
                       class="btn btn-light scrollto" style="width: 228.6px;"><span class="h-lines"></span><span
-                        class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Gửi Lời
-                      Chúc</a>
+                        class="v-lines"></span><span class="h-lines"></span><span class="v-lines"></span>Gửi Lời Chúc</a>
                   </div>
                 </div>
 
@@ -4812,9 +4811,7 @@
                 <div>
                   <input type="text" name="name" placeholder="Tên của bạn*" class="form-control" aria-required="true"
                     aria-invalid="true" id="guest-name"><label id="name-error" class="error" for="name"
-                    style="visibility: hidden;">Vui lòng nhập
-                    tên của
-                    bạn.</label>
+                    style="visibility: hidden;">Vui lòng nhập tên của bạn.</label>
                 </div>
 
 
@@ -5754,17 +5751,11 @@
                 <div class="center">
                   <button type="submit" class="btn-blessing btn btn-primary submit_form" style="width: 228.6px;"><span
                       class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span
-                      class="v-lines"></span>Gửi
-                    lời chúc</button>
+                      class="v-lines"></span>Gửi lời chúc</button>
                 </div>
               </form>
 
               <div class="wish-box" id="congratulation-list" data-slug="anh-nhan-11032025-1601">
-                <div class="wish-box-item">
-                  <strong>Huy Thanh Jewelry</strong>
-                  <p>Huy Thanh rất vui khi được đồng hành cùng hai bạn trong chặng đường hạnh phúc. Dù
-                    sông có đổi núi có dời, chúc hai bạn vẫn một đời thương nhau &lt;3 </p>
-                </div>
                 <div class="wish-box-item ">
                   <div class="deletable" data-id="24992"></div>
                   <strong>Nguyễn Tiến Thành</strong>
@@ -5787,6 +5778,10 @@
 
   <script src="./files/sweetalert2@11"></script>
   <script>
+    // API google sheet
+    // https://script.google.com/macros/s/AKfycbxmzmLfFrVpWBxPbRUQVdO9R7iPLNE1YhIdTHdaBqSBPJ8gDGMHrPF9h2dFp3tcLpVgGg/exec
+    const API_URL = "https://script.google.com/macros/s/AKfycbwIqUvk8Elr4zbvSH7d5u8_GM-gBHn7_WVrwEu4PRbcGllJQodmMqbRJpXrsqNYXpzWVA/exec";
+
     function initEvent() {
       $('.deletable').off('click').on('click', function (e) {
         e.preventDefault();
@@ -5914,31 +5909,35 @@
       }
     }
 
+  
     function fetchBlessingData() {
-      const slug = $('#congratulation-list').data('slug');
-      if (slug) {
+      $.ajax({
+        crossDomain: true,
+        url: API_URL,
+        method: "GET",
+        // dataType: "jsonp"
+      })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+
         $.ajax({
-          url: '/api/blessing/' + slug, // Gọi đúng endpoint
+          url: API_URL, // Gọi đúng endpoint
           method: 'GET', // Thay đổi phương thức thành GET
           success: function (response) {
             const data = response.data;
-            let congratulateHtmlAll = `
-                            <div class="wish-box-item">
-                                <strong>Huy Thanh Jewelry</strong>
-                                <p>Huy Thanh rất vui khi được đồng hành cùng hai bạn trong chặng đường hạnh phúc. Dù
-                                    sông có đổi núi có dời, chúc hai bạn vẫn một đời thương nhau &lt;3 </p>
-                            </div>`; // Sử dụng let để biến có thể thay đổi
+            let congratulateHtmlAll = '';
             data.forEach(function (item, index) {
               let congratulateHtml = ` <div class="wish-box-item ">`;
               congratulateHtml += `
-                                <div class="deletable" data-id="${item.id}"></div>
+                                <div class="deletable" data-id="${item.timestamp}"></div>
                                 <strong>${item.name}</strong>
                                 <p>${item.congratulations}</p>
                             `;
               if (window.location.href.includes('/edit')) {
                 if (!item.meta) {
                   congratulateHtml += `
-                                    <p style="display: flex;align-items: center;" data-id="${item.id}">
+                                    <p style="display: flex;align-items: center;" data-id="${item.timestamp}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rsvp-save-reply ">
     <path
         d="M6.9375 19.875V14.8125C6.9375 14.1912 7.44118 13.6875 8.0625 13.6875H15.9375C16.5588 13.6875 17.0625 14.1912 17.0625 14.8125V20.4375M17.0625 4.125V6.375C17.0625 6.99632 16.5588 7.5 15.9375 7.5L8.0625 7.5C7.44118 7.5 6.9375 6.99632 6.9375 6.375L6.9375 3M20.4351 6.93513L17.0649 3.56487C16.7032 3.20319 16.2127 3 15.7012 3H4.92857C3.86344 3 3 3.86344 3 4.92857V19.0714C3 20.1366 3.86344 21 4.92857 21H19.0714C20.1366 21 21 20.1366 21 19.0714V8.29883C21 7.78734 20.7968 7.2968 20.4351 6.93513Z"
@@ -5949,7 +5948,7 @@
                 } else {
                   const metaData = JSON.parse(item.meta)
                   congratulateHtml += `
-                                    <p style="display: flex;align-items: center;" data-id="${item.id}">
+                                    <p style="display: flex;align-items: center;" data-id="${item.timestamp}">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="rsvp-save-reply rsvp-hidden">
     <path
         d="M6.9375 19.875V14.8125C6.9375 14.1912 7.44118 13.6875 8.0625 13.6875H15.9375C16.5588 13.6875 17.0625 14.1912 17.0625 14.8125V20.4375M17.0625 4.125V6.375C17.0625 6.99632 16.5588 7.5 15.9375 7.5L8.0625 7.5C7.44118 7.5 6.9375 6.99632 6.9375 6.375L6.9375 3M20.4351 6.93513L17.0649 3.56487C16.7032 3.20319 16.2127 3 15.7012 3H4.92857C3.86344 3 3 3.86344 3 4.92857V19.0714C3 20.1366 3.86344 21 4.92857 21H19.0714C20.1366 21 21 20.1366 21 19.0714V8.29883C21 7.78734 20.7968 7.2968 20.4351 6.93513Z"
@@ -6001,7 +6000,7 @@
             console.error('Có lỗi xảy ra khi lấy dữ liệu từ API.');
           }
         });
-      }
+      
     }
 
     $('.btn-blessing').on('click', function (e) {
@@ -6014,26 +6013,26 @@
       // var avatarFile = $('#avatar-upload')[0].files[0]; // Lấy file ảnh (nếu có)
 
       if (!name) {
-        showErrorPopup('Tên không được để trống!');
+        showErrorPopup('Nhập tên bạn ưi ^^!');
         return;
       }
       if (!blessing) {
-        showErrorPopup('Lời chúc không được để trống!');
+        showErrorPopup('Nhập lời chúc nha bạn!');
         return;
       }
 
       // Tạo FormData
       var formData = new FormData();
-      formData.append('slug', slug);
+      // formData.append('slug', slug);
       formData.append('name', name);
       // formData.append('mail', mail);
       formData.append('congratulations', blessing);
 
       $.ajax({
-        headers: {
-          "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
-        },
-        url: '/api/blessing',
+        // headers: {
+        //   "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+        // },
+        url: API_URL,
         method: 'POST',
         data: formData,
         processData: false, // Ngăn jQuery tự động chuyển đổi dữ liệu
@@ -6058,6 +6057,8 @@
     });
 
     fetchBlessingData();
+
+
   </script>
   <style>
     .neela-style {
@@ -6787,7 +6788,9 @@
     };
   </script>
 
-  <script src="./files/jquery-plugin-collection.js.download"></script>
+  <!-- <script src="./files/jquery-plugin-collection.js.download"></script> -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script src="./files/variables.js.download"></script>
 
   <script src="./files/scripts.js.download"></script>
