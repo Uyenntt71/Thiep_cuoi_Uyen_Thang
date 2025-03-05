@@ -33,11 +33,11 @@
   <meta property="og:image:height" content="630">
 
   <link rel="stylesheet" href="./files/croppie.min.css">
-  <script src="./files/croppie.min.js.download"></script>
+  <script src="./files/croppie.min.js"></script>
   <link rel="stylesheet" href="./files/flatpickr.min.css">
   <link rel="stylesheet" href="./files/confirmDate.css">
   <script src="./files/flatpickr"></script>
-  <script src="./files/confirmDate.js.download"></script>
+  <script src="./files/confirmDate.js"></script>
 
 
   <!-- Fav and touch icons -->
@@ -543,16 +543,16 @@
     }
   </style>
 
-  <script src="./files/jquery.min.js.download"></script>
+  <script src="./files/jquery.min.js"></script>
   <link rel="stylesheet preload" type="text/css" href="./files/main.css">
 
   <link rel="stylesheet preload" type="text/css" href="./files/residual.css">
-  <!-- <script rel="preload" type="text/javascript" src="./files/frontend.js.download"></script> -->
+  <script rel="preload" type="text/javascript" src="./files/frontend.js"></script>
   <link rel="stylesheet" href="./files/daterangepicker.css">
 
   <script type="text/javascript"
     class="flasher-js">(function () { var rootScript = 'https://cdn.jsdelivr.net/npm/@flasher/flasher@1.3.2/dist/flasher.min.js'; var FLASHER_FLASH_BAG_PLACE_HOLDER = {}; var options = mergeOptions([], FLASHER_FLASH_BAG_PLACE_HOLDER); function mergeOptions(first, second) { return { context: merge(first.context || {}, second.context || {}), envelopes: merge(first.envelopes || [], second.envelopes || []), options: merge(first.options || {}, second.options || {}), scripts: merge(first.scripts || [], second.scripts || []), styles: merge(first.styles || [], second.styles || []), }; } function merge(first, second) { if (Array.isArray(first) && Array.isArray(second)) { return first.concat(second).filter(function (item, index, array) { return array.indexOf(item) === index; }); } return Object.assign({}, first, second); } function renderOptions(options) { if (!window.hasOwnProperty('flasher')) { console.error('Flasher is not loaded'); return; } requestAnimationFrame(function () { window.flasher.render(options); }); } function render(options) { if ('loading' !== document.readyState) { renderOptions(options); return; } document.addEventListener('DOMContentLoaded', function () { renderOptions(options); }); } if (1 === document.querySelectorAll('script.flasher-js').length) { document.addEventListener('flasher:render', function (event) { render(event.detail); }); document.addEventListener('livewire:navigating', function () { var elements = document.querySelectorAll('.fl-no-cache'); for (var i = 0; i < elements.length; i++) { elements[i].remove(); } }); } if (window.hasOwnProperty('flasher') || !rootScript || document.querySelector('script[src="' + rootScript + '"]')) { render(options); } else { var tag = document.createElement('script'); tag.setAttribute('src', rootScript); tag.setAttribute('type', 'text/javascript'); tag.onload = function () { render(options); }; document.head.appendChild(tag); } })();</script>
-  <script src="./files/flasher.min.js.download" type="text/javascript"></script>
+  <script src="./files/flasher.min.js" type="text/javascript"></script>
   <style>
     :root {
       --swal2-container-padding: 0.625em;
@@ -4833,78 +4833,41 @@
                           <input type="text" id="searchWishSuggestions" onkeyup="searchWishSuggestionsFunction()"
                             placeholder="Tìm kiếm...">
                           <ul id="wishSuggestions">
-                            <li><a class="showContent" href="#">Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh
-                                phúc!</a></li>
-                            <li><a class="showContent" href="#">Chúc mừng ngày trọng đại tới hai bạn. Hạnh phúc bền lâu
-                                và trọn vẹn nhé!</a></li>
-                            <li><a class="showContent" href="#">Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu
-                                bạc răng long, sớm có thiên thần nhỏ nhé!</a></li>
-                            <li><a class="showContent" href="#">Chúc hai bạn ngày vui hạnh phúc. Hãy yêu thương nhau
-                                thật nhiều và sống thật hạnh phúc nha!</a></li>
-                            <li><a class="showContent" href="#">Chúc hai bạn sớm có con đàn cháu đống, cửa nhà lúc nào
-                                cũng đầm ấm, yên vui nhé!</a></li>
-                            <li><a class="showContent" href="#">Thật vui vì cuối cùng ngày này cũng tới với bạn. Tôi
-                                thành tâm chúc hai bạn thật nhiều hạnh phúc và sống đời vui vẻ cùng nhau mãi mãi!</a>
+                            <li><a class="showContent" href="#">Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc!</a></li>
+                            <li><a class="showContent" href="#">Chúc mừng ngày trọng đại tới hai bạn. Hạnh phúc bền lâu và trọn vẹn nhé!</a></li>
+                            <li><a class="showContent" href="#">Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng long, sớm có thiên thần nhỏ nhé!</a></li>
+                            <li><a class="showContent" href="#">Chúc hai bạn ngày vui hạnh phúc. Hãy yêu thương nhau thật nhiều và sống thật hạnh phúc nha!</a></li>
+                            <li><a class="showContent" href="#">Chúc hai bạn sớm có con đàn cháu đống, cửa nhà lúc nào cũng đầm ấm, yên vui nhé!</a></li>
+                            <li><a class="showContent" href="#">Thật vui vì cuối cùng ngày này cũng tới với bạn. Tôi thành tâm chúc hai bạn thật nhiều hạnh phúc và sống đời vui vẻ cùng nhau mãi mãi!</a>
                             </li>
-                            <li><a class="showContent" href="#">Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc
-                                sống mới của cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!</a></li>
-                            <li><a class="showContent" href="#">Chúc đôi trai tài gái sắc hạnh phúc trọn vẹn, luôn yêu
-                                thương nhau thật nhiều!</a></li>
-                            <li><a class="showContent" href="#">Chia vui cùng bạn trong ngày trọng đại này. Cầu mong
-                                cuộc sống sau này của 2 vợ chồng thật thuận hòa, may mắn, làm ăn phát tài nha.</a></li>
-                            <li><a class="showContent" href="#">Tôi mong tình yêu của hai bạn thật bền chặt, gắn bó để
-                                xây dựng tổ ấm yên bình, hạnh phúc!</a></li>
-                            <li><a class="showContent" href="#">Hai bạn của tôi chắc chắn sẽ có được nhiều hạnh phúc.
-                                Mong hai bạn có sức khỏe dồi dào, làm ăn phát đạt và sớm có cháu cho ông bà bồng bế
-                                nhé!</a></li>
-                            <li><a class="showContent" href="#">Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc
-                                hai bạn một cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung, hạnh phúc
-                                lâu dài.</a></li>
-                            <li><a class="showContent" href="#">Nơi nào có yêu thương nơi đó chắc chắn hạnh phúc. Hai
-                                bạn đã tìm được nơi đủ đầy yêu thương rồi, hãy cùng nắm tay nhau đi hết cuộc đời
-                                nhé!</a></li>
-                            <li><a class="showContent" href="#">Khởi đầu một cuộc sống mới, nguyện ước cho bạn của tôi
-                                những ngày tháng hạnh phúc phía trước để cùng xây dựng tổ ấm với người bạn đời. Happy
-                                ending!</a></li>
-                            <li><a class="showContent" href="#">Mình tin rằng đây sẽ là khởi đầu cho những điều tốt đẹp
-                                sắp tới trong cuộc sống của hai bạn. Hãy yêu thương và cùng nhau vượt qua mọi khó khăn
-                                trong cuộc sống nhé.</a></li>
-                            <li><a class="showContent" href="#">Hôn nhân đánh dấu sự kết thúc một câu chuyện tình yêu và
-                                bắt đầu một trận đấu vật. Chúc bạn những điều tốt đẹp nhất.</a></li>
-                            <li><a class="showContent" href="#">Tôi sẽ nói cho bạn bí mật của một cuộc hôn nhân hạnh
-                                phúc. Đó vẫn là … một bí mật cho tất cả! Chúc bạn tất cả những điều tốt đẹp nhất của
-                                thời gian phía trước.</a></li>
-                            <li><a class="showContent" href="#">Hôn nhân thật đẹp. Cuối cùng bạn đã tìm thấy một người
-                                mà bạn bị làm phiền suốt cuộc đời.</a></li>
-                            <li><a class="showContent" href="#">Hai trở thành một: Một giường, một điều khiển từ xa, một
-                                phòng tắm! Xin chúc mừng đám cưới hai bạn.</a></li>
-                            <li><a class="showContent" href="#">Chúc đôi trai tài gái sắc nhà mình hạnh phúc vẹn tròn,
-                                cung hỷ cung hỷ!</a></li>
-                            <li><a class="showContent" href="#">Chúc mừng anh trai của em đã có người rước nhé. Em mong
-                                anh chị có cuộc sống vui vẻ, hạnh phúc phía trước, làm ăn phát tài phát lộc.</a></li>
-                            <li><a class="showContent" href="#">Anh chị là một cặp trời sinh, chắc chắn sau này sẽ rất
-                                hạnh phúc. Em chúc anh chị sức khỏe dồi dào, làm ăn phát đạt và sớm có thiên thần nhỏ
-                                cho vui cửa vui nhà.</a></li>
-                            <li><a class="showContent" href="#">Hôm nay là ngày vui của anh chị và cũng là ngày em rất
-                                hạnh phúc. Chúc anh chị mãi yêu thương nhau như bây giờ và đạt được mọi ước nguyện trong
-                                cuộc sống.</a></li>
-                            <li><a class="showContent" href="#">Chúc anh/chị/em trăm năm hạnh phúc, thuận vợ thuận
-                                chồng.</a></li>
-                            <li><a class="showContent" href="#">Hôm nay chú rể đẹp trai, cô dâu xinh gái. Chúc mừng ngày
-                                thành hôn hai bạn tôi!</a></li>
-                            <li><a class="showContent" href="#">Chúc mừng đôi bạn trẻ nhé! Mãi yêu thương nhau đến đầu
-                                bạc răng long bạn nha!</a></li>
-                            <li><a class="showContent" href="#">Thay mặt team (tên nhóm) chúc hai bạn ngày ngày ân ái,
-                                bên nhau trọn đời.</a></li>
-                            <li><a class="showContent" href="#">Happy wedding! Chúc hai bạn có cuộc sống mới ngập tràn
-                                tiếng cười và niềm vui, sớm có thiên thần nhỏ bồng bé!</a></li>
+                            <li><a class="showContent" href="#">Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!</a></li>
+                            <li><a class="showContent" href="#">Chúc đôi trai tài gái sắc hạnh phúc trọn vẹn, luôn yêu thương nhau thật nhiều!</a></li>
+                            <li><a class="showContent" href="#">Chia vui cùng bạn trong ngày trọng đại này. Cầu mong cuộc sống sau này của 2 vợ chồng thật thuận hòa, may mắn, làm ăn phát tài nha.</a></li>
+                            <li><a class="showContent" href="#">Tôi mong tình yêu của hai bạn thật bền chặt, gắn bó để xây dựng tổ ấm yên bình, hạnh phúc!</a></li>
+                            <li><a class="showContent" href="#">Hai bạn của tôi chắc chắn sẽ có được nhiều hạnh phúc. Mong hai bạn có sức khỏe dồi dào, làm ăn phát đạt và sớm có cháu cho ông bà bồng bế nhé!</a></li>
+                            <li><a class="showContent" href="#">Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc bạn một cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung, hạnh phúc lâu dài.</a></li>
+                            <li><a class="showContent" href="#">Nơi nào có yêu thương nơi đó chắc chắn hạnh phúc. Hai bạn đã tìm được nơi đủ đầy yêu thương rồi, hãy cùng nắm tay nhau đi hết cuộc đời nhé!</a></li>
+                            <li><a class="showContent" href="#">Khởi đầu một cuộc sống mới, nguyện ước cho bạn của tôi những ngày tháng hạnh phúc phía trước để cùng xây dựng tổ ấm với người bạn đời. Happy ending!</a></li>
+                            <li><a class="showContent" href="#">Mình tin rằng đây sẽ là khởi đầu cho những điều tốt đẹp sắp tới trong cuộc sống của hai bạn. Hãy yêu thương và cùng nhau vượt qua mọi khó khăn trong cuộc sống nhé.</a></li>
+                            <li><a class="showContent" href="#">Hôn nhân đánh dấu sự kết thúc một câu chuyện tình yêu và bắt đầu một trận đấu vật. Chúc bạn những điều tốt đẹp nhất.</a></li>
+                            <li><a class="showContent" href="#">Tôi sẽ nói cho bạn bí mật của một cuộc hôn nhân hạnh phúc. Đó vẫn là … một bí mật cho tất cả! Chúc bạn tất cả những điều tốt đẹp nhất của thời gian phía trước.</a></li>
+                            <li><a class="showContent" href="#">Hôn nhân thật đẹp. Cuối cùng bạn đã tìm thấy một người mà bạn bị làm phiền suốt cuộc đời.</a></li>
+                            <li><a class="showContent" href="#">Hai trở thành một: Một giường, một điều khiển từ xa, một phòng tắm! Xin chúc mừng đám cưới hai bạn.</a></li>
+                            <li><a class="showContent" href="#">Chúc đôi trai tài gái sắc nhà mình hạnh phúc vẹn tròn, cung hỷ cung hỷ!</a></li>
+                            <li><a class="showContent" href="#">Chúc mừng anh trai của em đã có người rước nhé. Em mong anh chị có cuộc sống vui vẻ, hạnh phúc phía trước, làm ăn phát tài phát lộc.</a></li>
+                            <li><a class="showContent" href="#">Anh chị là một cặp trời sinh, chắc chắn sau này sẽ rất hạnh phúc. Em chúc anh chị sức khỏe dồi dào, làm ăn phát đạt và sớm có thiên thần nhỏ cho vui cửa vui nhà.</a></li>
+                            <li><a class="showContent" href="#">Hôm nay là ngày vui của anh chị và cũng là ngày em rất hạnh phúc. Chúc anh chị mãi yêu thương nhau như bây giờ và đạt được mọi ước nguyện trong cuộc sống.</a></li>
+                            <li><a class="showContent" href="#">Chúc anh/chị/em trăm năm hạnh phúc, thuận vợ thuận chồng.</a></li>
+                            <li><a class="showContent" href="#">Hôm nay chú rể đẹp trai, cô dâu xinh gái. Chúc mừng ngày thành hôn hai bạn tôi!</a></li>
+                            <li><a class="showContent" href="#">Chúc mừng đôi bạn trẻ nhé! Mãi yêu thương nhau đến đầu bạc răng long bạn nha!</a></li>
+                            <li><a class="showContent" href="#">Thay mặt team (tên nhóm) chúc hai bạn ngày ngày ân ái, bên nhau trọn đời.</a></li>
+                            <li><a class="showContent" href="#">Happy wedding! Chúc hai bạn có cuộc sống mới ngập tràn tiếng cười và niềm vui, sớm có thiên thần nhỏ bồng bé!</a></li>
 
                           </ul>
                         </div>
                       </div>
                     </div>
-                    <label id="content-error" class="error" for="content" style="visibility: hidden;">Vui lòng nhập
-                      lời chúc.</label>
+                    <label id="content-error" class="error" for="content" style="visibility: hidden;">Vui lòng nhập lời chúc.</label>
 
                     <div class="emoji-picker" style="display: none;">
                       <emoji-picker style="max-width: 100%;max-height: 350px;" class="light"><template
@@ -6171,7 +6134,7 @@
                       Ngân hàng: BIDV Bank<br>
                       Tên: Nguyen Thi Thu Uyen<br>
                       STK: 2151678803<br>
-                      Nhờ nóc nhà giữ hộ ạ ^^
+                      ^^ Nhờ nóc nhà giữ hộ ạ ^^
                     </p>
 
                   </div>
@@ -6211,7 +6174,7 @@
                       Ngân hàng: BIDV Bank<br>
                       Tên: Nguyen Thi Thu Uyen<br>
                       STK: 2151678803<br>
-                      Nhờ nóc nhà giữ hộ ạ ^^
+                      ^^ Cám ơn bạn ^^
                     </p>
                   </div>
                 </div>
@@ -6649,20 +6612,20 @@
       $('#confirmDeletePopup').fadeIn();
     });
 
-    document.getElementById('share-button').addEventListener('click', function (e) {
-      e.preventDefault();
-      var shareLink = this.href;
-      var tempInput = document.createElement('input');
-      tempInput.style.position = 'absolute';
-      tempInput.style.left = '-9999px';
-      tempInput.value = shareLink;
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      tempInput.setSelectionRange(0, 99999); // Cho mobile
-      document.execCommand('copy');
-      document.body.removeChild(tempInput);
-      showSuccessPopup('Copy link mời cưới thành công!')
-    });
+    // document.getElementById('share-button').addEventListener('click', function (e) {
+    //   e.preventDefault();
+    //   var shareLink = this.href;
+    //   var tempInput = document.createElement('input');
+    //   tempInput.style.position = 'absolute';
+    //   tempInput.style.left = '-9999px';
+    //   tempInput.value = shareLink;
+    //   document.body.appendChild(tempInput);
+    //   tempInput.select();
+    //   tempInput.setSelectionRange(0, 99999); // Cho mobile
+    //   document.execCommand('copy');
+    //   document.body.removeChild(tempInput);
+    //   showSuccessPopup('Copy link mời cưới thành công!')
+    // });
   </script>
   <script>
     var slidehow_images = [
@@ -6680,14 +6643,11 @@
     };
   </script>
 
-  <script src="./files/jquery-plugin-collection.js.download"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
-  <script src="./files/variables.js.download"></script>
-
-  <script src="./files/scripts.js.download"></script>
-  <script src="./files/template.settings.js.download"></script>
-  <script src="./files/biiiiiiiiiiiii.js.download"></script>
+  <script src="./files/jquery-plugin-collection.js"></script>
+  <script src="./files/variables.js"></script>
+  <script src="./files/scripts.js"></script>
+  <script src="./files/template.settings.js"></script>
+   <script src="./files/biiiiiiiiiiiii.js"></script>
   <style type="text/css">
     .mouse-scroll-on-mobile {
       display: none;
@@ -7172,8 +7132,7 @@
 
 
 
-  <script src="./files/insertTextAtCursor.js.download"></script>
-  <!-- <script type="module" src="./files/init.js.download"></script> -->
+  <script src="./files/insertTextAtCursor.js"></script>
   <script type="module" src="./files/init.js"></script>
 
   <div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div>
