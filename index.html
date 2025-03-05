@@ -3007,7 +3007,7 @@
                   </div>
                   <input type="file" class="img-up-load" accept="image/*">
                   <div class="image-wrapper">
-                    <img id="couple_img_1" data-width="1200" data-height="1200" src="./files/anh_cuoi_2.jpg"
+                    <img id="couple_img_1" data-width="1200" data-height="1200" src="./files/anh_cuoi_1.jpg"
                       class=" edit-im output-image">
                   </div>
                 </div>
@@ -3268,7 +3268,7 @@
                               </div>
                               <input type="file" class="img-up-load" accept="image/*">
                               <div class="image-wrapper boder" style="max-height:500px;">
-                                <img id="story_img_1" data-movable="0" src="./files/anh_cuoi_4.jpg"
+                                <img id="story_img_1" data-movable="0" src="./files/anh_cuoi_6.jpg"
                                   alt="Chúng mình đã từng..." data-width="1200" data-height="1200"
                                   class="w-100 h-auto output-image edit-im"
                                   style="max-width:500px; object-fit: cover;left:0;">
@@ -3329,7 +3329,7 @@
                               </div>
                               <input type="file" class="img-up-load" accept="image/*">
                               <div class="image-wrapper boder" style="max-height:500px;">
-                                <img id="story_img_2" data-movable="0" src="./files/story.png"
+                                <img id="story_img_6" data-movable="0" src="./files/story.png"
                                   alt="Chúng mình đã từng..." data-width="1200" data-height="1200"
                                   class="w-100 h-auto output-image edit-im"
                                   style="max-width:500px; object-fit: cover; left:0px;">
@@ -3392,7 +3392,7 @@
                               </div>
                               <input type="file" class="img-up-load" accept="image/*">
                               <div class="image-wrapper boder" style="max-height:500px;">
-                                <img id="story_img_3" src="./files/anh_cuoi_5.jpg" alt="Chúng mình đã từng..."
+                                <img id="story_img_3" src="./files/anh_cuoi_8.jpg" alt="Chúng mình đã từng..."
                                   data-width="1200" data-height="1200" class="w-100 h-auto output-image edit-im"
                                   style="max-width:500px; object-fit: cover; left:0;">
 
@@ -3603,7 +3603,7 @@
                       chúc</a>
                   </div>
                   <div class="center m-0">
-                    <a href="#" target="_blank" class="btn btn-primary reverse text-white px-2 mt-2"
+                    <a href="./confirmation.html" target="_blank" class="btn btn-primary reverse text-white px-2 mt-2"
                       style="min-width: 240px; max-width: 240px; width: 254.6px;" id="rsvp-link"><span
                         class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span
                         class="v-lines"></span>Xác nhận tham dự</a>
@@ -3967,7 +3967,8 @@
 
                     <div class="info">
                       <a href="javascript:void(0)" id="" data-title="LỄ THÀNH HÔN" data-start="10:30 17/03/2025"
-                        data-end="10:30 17/03/2025" data-location="Nhà văn hóa Khu 3, Hoàng Cương, Thanh Ba, Phú Thọ"
+                        data-end="10:30 17/03/2025"
+                        data-location="Nhà văn hóa Khu 3, Hoàng Cương, Thanh Ba, Phú Thọ"
                         class="btn btn-primary reverse calendar-button-custom-click" style="width: 219.6px;"><span
                           class="h-lines"></span><span class="v-lines"></span><span class="h-lines"></span><span
                           class="v-lines"></span>Thêm vào lịch</a>
@@ -5719,7 +5720,7 @@
   <script>
     // API google sheet
     // https://script.google.com/macros/s/AKfycbxmzmLfFrVpWBxPbRUQVdO9R7iPLNE1YhIdTHdaBqSBPJ8gDGMHrPF9h2dFp3tcLpVgGg/exec
-    const API_URL = "https://script.google.com/macros/s/AKfycbxdPRb8OOYNgkJu4Wg4XG2EM84oQ3oEzFH98iYH3mMzCGGEwx1RH-vUS6YpfVOf9RxtUA/exec";
+    const API_URL = "https://script.google.com/macros/s/AKfycbwD1Bb_xur5VVg33oc_fFB9PJOS7OD6sVoUVcx3SRRJQ2tEVIFzkQ0McPyG71z9eieqYw/exec";
 
     function initEvent() {
       $('.deletable').off('click').on('click', function (e) {
@@ -5929,6 +5930,7 @@
       var formData = new FormData();
       formData.append('name', name);
       formData.append('congratulations', blessing);
+      formData.append('action', 'saveMessage');
 
       fetch(API_URL, {
         method: "POST",
@@ -6436,7 +6438,7 @@
         </a>
       </li>
       <li class="text-center">
-        <a href="#" target="_blank" class="text-white">
+        <a href="./confirmation.html" target="_blank" class="text-white">
           <span class="content-button tooltipBtn">
             <span class="tooltiptext">Xác nhận tham dự</span>
             <img class="access-icon" src="./files/gift.png" alt="">
@@ -6673,7 +6675,7 @@
       templatePremium: ('1' === '1'),
       alert: JSON.parse('[]'),
       effect: JSON.parse(
-        '{\"type\":\"custom\",\"setting\":{\"icon\":\"./files/HEART_LOGO.png\",\"number\":\"40\",\"speed\":\"3\",\"minSize\":\"25\",\"maxSize\":\"60\"}}'
+        '{\"type\":\"custom\",\"setting\":{\"icon\":\"./files/HEART_LOGO.png\",\"number\":\"40\",\"speed\":\"3\",\"minSize\":\"15\",\"maxSize\":\"30\"}}'
       )
     };
   </script>
